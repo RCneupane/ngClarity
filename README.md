@@ -3,6 +3,9 @@
 
 This is a repository for a Angular 6.x  and Vmware Clarity Design version 1.0 Starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
+# Demo Here
+
+[Demo Here](https://ngclarity-c8e8c.firebaseapp.com/)
 
 #### Installation
 
@@ -24,9 +27,7 @@ Dark UI
 Light UI
 ```
 
-#### Demo Here
 
-[Demo Here](https://ngclarity-c8e8c.firebaseapp.com/)
 
 #### Package Include
 
