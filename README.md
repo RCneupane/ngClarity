@@ -4,7 +4,8 @@ This is a repository for a Angular 6.x  and Vmware Clarity Design version 1.0 St
 
 #### Package Include
 
-``` Angular 6
+``` 
+Angular 6
 
 Vmware Clarity Desivn v.10
 
