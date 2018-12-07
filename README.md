@@ -18,7 +18,7 @@ ng serve
 ```
 
 #### Themes
-``
+```
 Dark UI
 
 Light UI
