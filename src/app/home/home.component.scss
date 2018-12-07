@@ -1,0 +1,119 @@
+:host {
+
+  // Card
+  .card {
+    z-index: 3;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+
+    //Icon
+    &-icon {
+      border-radius: 3px;
+      background-color: #999;
+      color: white;
+      padding: 10px;
+      margin-top: -24px;
+      margin-right: 15px;
+      float: left;
+
+      // Icon Blue
+      &__blue {
+        background: linear-gradient(60deg, #03A9F4, #027bb1);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px #027bb1;
+      }
+
+      //Icon Red
+      &__red {
+        background: linear-gradient(60deg, #ef5350, #EA2027);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px #EA2027;
+      }
+
+      //Icon Yellow
+      &__yellow {
+        background: linear-gradient(60deg, #FFC312, #fb8c00);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px #fb8c00;
+      }
+
+      //Icon Green
+      &__green {
+        background: linear-gradient(60deg, #66bb6a, #43a047);
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px #43a047;
+      }
+    }
+
+    // Header
+    &-header {
+
+      &__head {
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+      }
+
+      // Card Data
+      &__data {
+        margin: 6px 0 0 0;
+        text-align: right;
+      }
+    }
+
+    // Footer
+    &-footer {
+      display: flex;
+
+      // Footer Head
+      &__head {
+        margin: 0;
+        font-weight: 700;
+      }
+
+      // Footer Data
+      &__data {
+        font-size: 0.631rem;
+        flex: 1;
+        text-align: right;
+        margin: 0;
+        font-weight: 500;
+      }
+
+      // Footer Icon
+      &__icon {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        display: inline-block;
+      }
+    }
+  }
+// Table
+.card-chart .table {
+  border: none;
+  margin-top: 0;
+}
+
+//Clickble Hover
+.card.clickable:hover {
+  box-shadow: 0 0.15rem 0 0 #03A9F4;
+  border: 1px solid #03A9F4;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  transition: border 0.2s ease-out, -webkit-transform 0.2s ease-outease-out;
+  transition: border 0.2s ease-out, transform 0.2s ease-out;
+  transition: border 0.2s ease-out, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+.card [class*=card-header-] {
+  margin: 0 15px;
+  padding: 0;
+  position: relative;
+}
+
+.chart-section{
+  & .card{
+    height: 408px;
+  }
+}
+
+}

@@ -1,0 +1,276 @@
+<!-- Showcase Card Row -->
+<div class="row">
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!-- Card -->
+    <div class="card clickable" routerLink="/setting">
+      <!-- Card Header-->
+      <div class="card-header">
+        <div class="card-icon card-icon__blue">
+          <clr-icon shape="dashboard" style="width: 56px; height: 56px;"></clr-icon>
+        </div>
+        <p class="card-header__head">All Result</p>
+        <h3 class="card-header__data">2012469756</h3>
+      </div>
+      <!-- Card Header End-->
+      <!-- Card Footer-->
+      <div class="card-footer">
+        <p class="card-footer__head">
+          <clr-icon class="card-footer__icon" shape="angle" size="22"></clr-icon>Today's Result
+        </p>
+        <h3 class="card-footer__data">1280</h3>
+      </div>
+      <!-- Card Footer End-->
+    </div>
+    <!-- Card End-->
+  </div>
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!-- Card -->
+    <div class="card clickable" routerLink="/setting">
+      <!-- Card Header-->
+      <div class="card-header">
+        <div class="card-icon card-icon__red">
+          <clr-icon shape="pop-out" style="width: 56px; height: 56px;"></clr-icon>
+        </div>
+        <p class="card-header__head">Abnormal</p>
+        <h3 class="card-header__data">2012469756</h3>
+      </div>
+      <!-- Card Header End-->
+      <!-- Card Footer-->
+      <div class="card-footer">
+        <p class="card-footer__head">
+          <clr-icon class="card-footer__icon" shape="angle" size="22"></clr-icon>Today's Result
+        </p>
+        <h3 class="card-footer__data">1280</h3>
+      </div>
+      <!-- Card Footer End-->
+    </div>
+    <!-- Card End-->
+  </div>
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!-- Card -->
+    <div class="card clickable" routerLink="/setting">
+      <!-- Card Header-->
+      <div class="card-header">
+        <div class="card-icon card-icon__yellow">
+          <clr-icon shape="exclamation-triangle" style="width: 56px; height: 56px;"></clr-icon>
+        </div>
+        <p class="card-header__head">Urgent</p>
+        <h3 class="card-header__data">2012469756</h3>
+      </div>
+      <!-- Card Header End-->
+      <!-- Card Footer-->
+      <div class="card-footer">
+        <p class="card-footer__head">
+          <clr-icon class="card-footer__icon" shape="angle" size="22"></clr-icon>Today's Result
+        </p>
+        <h3 class="card-footer__data">1280</h3>
+      </div>
+      <!-- Card Footer End-->
+    </div>
+    <!-- Card End-->
+  </div>
+  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+    <!-- Card -->
+    <div class="card clickable" routerLink="/setting">
+      <!-- Card Header-->
+      <div class="card-header">
+        <div class="card-icon card-icon__green">
+          <clr-icon shape="eye-hide" style="width: 56px; height: 56px;"></clr-icon>
+        </div>
+        <p class="card-header__head">Unreviewed</p>
+        <h3 class="card-header__data">2012469756</h3>
+      </div>
+      <!-- Card Header End-->
+      <!-- Card Footer-->
+      <div class="card-footer">
+        <p class="card-footer__head">
+          <clr-icon class="card-footer__icon" shape="angle" size="22"></clr-icon>Today's Result
+        </p>
+        <h3 class="card-footer__data">1280</h3>
+      </div>
+      <!-- Card Footer End-->
+    </div>
+    <!-- Card End-->
+  </div>
+</div>
+<!-- Showcase Card End -->
+<!-- Charts Section -->
+<div class="row chart-section">
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        Header
+      </div>
+      <!-- Bar Chart -->
+      <div style="display: block">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType">
+        </canvas>
+      </div>
+    </div>
+    <!-- Bar Chart End-->
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        Header
+      </div>
+      <!-- Table-->
+      <table class="table no-border">
+        <thead>
+          <tr>
+            <th>Decimal</th>
+            <th>Hexadecimal</th>
+            <th>Binary</th>
+            <th>Roman Numeral</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+
+        </tbody>
+      </table>
+      <!-- Table End-->
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <div class="card card-chart">
+      <div class="card-header">
+        Header
+      </div>
+      <!-- Table -->
+      <table class="table no-border">
+        <thead>
+          <tr>
+            <th>Decimal</th>
+            <th>Hexadecimal</th>
+            <th>Binary</th>
+            <th>Roman Numeral</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>5</td>
+            <td>101</td>
+            <td>V</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>A</td>
+            <td>1010</td>
+            <td>X</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>F</td>
+            <td>1111</td>
+            <td>XV</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Table End-->
+  </div>
+  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+    <!-- Pie Chart-->
+    <div class="card card-chart">
+      <div class="card-header">
+        Header
+      </div>
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"></canvas>
+    </div>
+    <!-- Pie Chart Ends-->
+  </div>
+</div>
+<!-- Charts Section -->

@@ -1,0 +1,126 @@
+<clr-main-container class="main-container">
+
+  <!-- Alerts -->
+  <div class="alert alert-app-level alert-info" role="alert">
+      <div class="alert-items">
+          <div class="alert-item static">
+              <div class="alert-icon-wrapper">
+                  <clr-icon class="alert-icon" shape="info-circle"></clr-icon>
+              </div>
+              <div class="alert-text">
+                  Alert Type: Info
+              </div>
+              <div class="alert-actions">
+                  <button class="btn alert-action">Action</button>
+              </div>
+          </div>
+      </div>
+      <button type="button" class="close" aria-label="Close">
+          <clr-icon aria-hidden="true" shape="close"></clr-icon>
+      </button>
+  </div>
+  <!-- Alerts -->
+  <!-- Header -->
+  <clr-header class="header-6">
+    <div class="branding">
+      <a href="#" class="nav-link">
+        <span class="clr-icon clr-clarity-logo"></span>
+        <span class="title">Online Reporting</span>
+      </a>
+    </div>
+    <div class="header-nav" [clr-nav-level]="1">
+      <a href="#" [routerLink]="['/home']" routerLinkActive="active" class="nav-link nav-text">Home</a>
+      <a href="#" [routerLink]="['/setting']" routerLinkActive="active" class="nav-link nav-text">Some Links</a>
+    </div>
+    <div class="header-actions">
+      <a href="" class="nav-link nav-icon">
+        <clr-icon shape="bell"></clr-icon>
+        <span class="badge">12</span>
+      </a>
+      <clr-dropdown>
+        <button class="nav-icon" clrDropdownTrigger>
+          <clr-icon shape="user"></clr-icon>
+          <clr-icon shape="caret down"></clr-icon>
+        </button>
+        <clr-dropdown-menu *clrIfOpen clrPosition="bottom-right">
+
+          <a href="#" clrDropdownItem>Some Menu</a>
+          <clr-dropdown>
+            <button type="button" class="btn btn-outline-primary" clrDropdownTrigger>
+              Select Theme
+            </button>
+            <clr-dropdown-menu clrPosition="bottom-right" *clrIfOpen>
+              <button type="button" clrPosition="bottom-right" clrDropdownItem class="dropdown-item" *ngFor="let theme of themes"
+                (click)="setTheme(theme)" clrDropdownItem>{{theme.name}}</button>
+            </clr-dropdown-menu>
+          </clr-dropdown>
+        </clr-dropdown-menu>
+      </clr-dropdown>
+    </div>
+  </clr-header>
+  <!-- Header Ends-->
+  <!-- Content Container Starts -->
+  <!-- The .content-container is a horizontal flexbox which wraps the Content-Area and sidenav -->
+  <div class="content-container">
+    <!-- SideNav -->
+    <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="collapsed" [clr-nav-level]="2">
+      <clr-vertical-nav-group routerLinkActive="active">
+        <clr-icon shape="bolt" clrVerticalNavIcon></clr-icon>
+        Superheroes Profile
+        <clr-vertical-nav-group-children>
+          <a clrVerticalNavLink>
+            Spider-Man
+          </a>
+          <a clrVerticalNavLink>
+            Black Widow
+          </a>
+          <a clrVerticalNavLink>
+            Deadpool
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+      <!-- Single Nav With Icon -->
+      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <clr-icon clrVerticalNavIcon shape="battery"></clr-icon>
+        Batman
+      </a>
+      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <clr-icon clrVerticalNavIcon shape="sad-face"></clr-icon>
+        Thanos
+      </a>
+      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
+        Captain America
+      </a>
+      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+        Iron Man
+      </a>
+      <a clrVerticalNavLink routerLink="./normal" routerLinkActive="active">
+        <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+        Hulk
+      </a>
+      <!-- Nav Group -->
+      <clr-vertical-nav-group routerLinkActive="active">
+        <clr-icon shape="data-cluster" clrVerticalNavIcon></clr-icon>
+        Super villain
+        <clr-vertical-nav-group-children *clrIfExpanded="true">
+          <a clrVerticalNavLink>
+            Verbal Kint
+          </a>
+          <a clrVerticalNavLink>
+            Catwoman
+          </a>
+        </clr-vertical-nav-group-children>
+      </clr-vertical-nav-group>
+    </clr-vertical-nav>
+    <!-- SideNav Ends-->
+    <!-- Content Area -->
+    <div class="content-area">
+      <!-- Router -->
+      <router-outlet></router-outlet>
+    </div>
+
+    <!-- Content Area -->
+  </div>
+</clr-main-container>

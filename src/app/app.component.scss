@@ -1,0 +1,16 @@
+.header.header-6, header.header-6 {
+  background-color: #25408f;
+}
+
+.clr-icon {
+  &.clr-clarity-logo {
+      background-image: url(../assets/img/ngClarity-logo.png);
+      width: 60px !important;
+      margin-right: 11px;
+  }
+}
+
+.badge{
+  background: #ffffff;
+  color: black;
+}
