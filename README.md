@@ -2,6 +2,54 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
+#### Installation
+
+```bash
+git clone https://github.com/RCneupane/ngClarity.git
+cd ngClarity
+
+# install the project's dependencies
+yarn # or run "npm install"
+
+# starts the application in dev mode and watches your files for livereload
+ng serve
+```
+
+#### Directory structure
+```
+
+├── src/                       <- source code of the application
+│   ├── app/
+│   │   └── component/
+│   │       └── <component>.component.html
+│   │       └── <component>.component.scss
+│   │       └── <component>.component.spec.ts
+│   │       └── <component>.component.ts
+│   │   └── app.component.html
+│   │   └── app.component.scss
+│   │   └── app.component.ts
+│   │   └── app.component.spec.ts
+│   │   └── app-routing.module.ts
+│   │   └── app.module.ts
+|   ├── assets/                         <- assets
+|   |      └── img/                      <- image
+|   |      └── img/                      <- image
+|   ├── environments/                         <- environments dev or prod
+|   ├── vendor/                         <- Theaming file
+|   |        └── theme-dark.min.css     
+|   |        └── theme-light.min.css
+|   ├── index.html
+|   ├── stylex.scss             
+|   ├── ...              
+|   └── ...
+└── angular.json
+└── package.json
+└── ts.config.json
+
+
+
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
