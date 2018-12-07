@@ -2,14 +2,14 @@
 
 This is a repository for a Angular 6.x  and Vmware Clarity Design version 1.0 Starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
-Package Include
------------------
-`` Angular 6
-   
-   Vmware Clarity Desivn v.10
-   
-   ng2-charts
-   ```
+#### Package Include
+
+``` Angular 6
+
+Vmware Clarity Desivn v.10
+
+ng2-charts
+```
 
 
 #### Installation
