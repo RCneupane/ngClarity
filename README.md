@@ -3,11 +3,26 @@
 
 This is a repository for a Angular 6.x  and Vmware Clarity Design version 1.0 Starter generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.1.
 
-#### Themes
 
+#### Installation
+
+```bash
+git clone https://github.com/RCneupane/ngClarity.git
+cd ngClarity
+
+# install the project's dependencies
+yarn # or run "npm install"
+
+# starts the application in dev mode and watches your files for livereload
+ng serve
+```
+
+#### Themes
+``
 Dark UI
 
 Light UI
+```
 
 #### Demo Here
 
@@ -24,18 +39,7 @@ ng2-charts
 ```
 
 
-#### Installation
 
-```bash
-git clone https://github.com/RCneupane/ngClarity.git
-cd ngClarity
-
-# install the project's dependencies
-yarn # or run "npm install"
-
-# starts the application in dev mode and watches your files for livereload
-ng serve
-```
 
 #### Directory structure
 ```
